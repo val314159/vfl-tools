@@ -17,6 +17,7 @@
 (cl:defmacro q         (cl:&rest r)                (cons (quote quote)    r))
 (cl:defmacro ?         (cl:&rest r)               `(cl:cond             ,@r))
 (cl:defmacro ^         (cl:&rest r)               `(cl:values           ,@r))
+(cl:defmacro ^^        (cl:&rest r)               `(cl:values-list      ,@r))
 (cl:defmacro a         (cl:&rest r)               `(cl:apply            ,@r))
 (cl:defmacro c         (cl:&rest r)               `(cl:funcall          ,@r))
 (cl:defmacro n         (cl:&rest r)               `(cl:progn            ,@r))
