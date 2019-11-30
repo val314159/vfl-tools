@@ -7,3 +7,5 @@
 (prin1 (λ(+ 1 2 $2) 10 20 30))
 
 (terpri)
+
+;(extended)
